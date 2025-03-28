@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  ans:
+    build: .
+    volumes:
+      - ./data:/app/data
+      - .:/app
+    working_dir: /app
