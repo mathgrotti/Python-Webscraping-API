@@ -1,4 +1,7 @@
-pdfplumber==0.10.3
-pandas==2.1.4
-tqdm==4.66.1
-openpyxl==3.1.2
+pdfplumber
+pandas
+tqdm
+openpyxl
+numpy
+zipfile = "latest"
+csv
