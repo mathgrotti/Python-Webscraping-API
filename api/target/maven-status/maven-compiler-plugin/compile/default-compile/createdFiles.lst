@@ -1,2 +1,3 @@
+com/ans/api/ApiApplication$Operadora.class
 com/ans/api/ApiApplication.class
-com/ans/api/Operadora.class
+com/ans/api/config/DatabaseInitializer.class

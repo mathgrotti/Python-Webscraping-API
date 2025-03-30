@@ -1,9 +1,15 @@
-version: '3.8'
-
 services:
-  ans:
-    build: .
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_DATABASE: ans_operadoras
+      MYSQL_USER: user123
+      MYSQL_PASSWORD: senha123
+      MYSQL_ROOT_PASSWORD: rootpassword
+    ports:
+      - "3306:3306"
     volumes:
-      - ./data:/app/data
-      - .:/app
-    working_dir: /app
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
