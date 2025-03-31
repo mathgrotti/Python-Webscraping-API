@@ -9,8 +9,10 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5173"],
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
+    expose_headers=["*"]
 )
 
 # Add exception handler to catch and log errors
@@ -29,7 +31,7 @@ async def root():
     return {
         "message": "API de Operadoras de Saúde",
         "rotas": {
-            "busca_operadoras": "/api/operadoras?termo=valor"
+            "busca_operadoras": "/api/operadoras"
         }
     }
 

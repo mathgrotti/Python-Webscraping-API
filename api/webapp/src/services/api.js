@@ -1,16 +1,9 @@
+// /api/webapp/src/services/api.js
+import axios from 'axios'
 
-const API_BASE = 'http://localhost:8000'; // Backend na porta 8000
+const api = axios.create({
+  baseURL: '/api',  // Corrigido para usar o proxy
+  timeout: 10000
+})
 
-export async function getOperadoras() {
-  const response = await fetch(`${API_BASE}/api/operadoras`);
-  return await response.json();
-}
-
-export async function postOperadora(data) {
-  const response = await fetch(`${API_BASE}/api/operadoras`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(data),
-  });
-  return await response.json();
-}
+export default api

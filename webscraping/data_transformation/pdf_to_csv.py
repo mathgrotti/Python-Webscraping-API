@@ -149,8 +149,8 @@ def salvar_resultados(df, saida_csv, saida_zip):
                 df[col] = df[col].replace(map_val)
         
         # Caminhos dos arquivos
-        caminho_csv = os.path.join('../../data/processed', saida_csv)
-        caminho_zip = os.path.join('../../data/processed', saida_zip)
+        caminho_csv = os.path.join('../data/processed', saida_csv)
+        caminho_zip = os.path.join('../data/processed', saida_zip)
         
         # Salva CSV com formatação adequada
         df.to_csv(
@@ -178,7 +178,7 @@ def salvar_resultados(df, saida_csv, saida_zip):
 
 if __name__ == "__main__":
     # Configurações
-    PDF_PATH = "../../data/raw/Anexo_I_Rol_2021RN_465.2021_RN627L.2024.pdf"
+    PDF_PATH = "../data/raw/Anexo_I_Rol_2021RN_465.2021_RN627L.2024.pdf"
     CSV_OUTPUT = "rol_procedimentos.csv"
     ZIP_OUTPUT = "Teste_Matheus_Grotti.zip"
     
