@@ -19,7 +19,7 @@ app.add_middleware(
 @app.exception_handler(Exception)
 async def global_exception_handler(request: Request, exc: Exception):
     error_msg = f"Unhandled error: {str(exc)}"
-    print(error_msg)  # Print to console for debugging
+    print(error_msg)
     return JSONResponse(
         status_code=500,
         content={"message": "Internal Server Error", "detail": str(exc)}

@@ -1,10 +1,10 @@
 import os
 import pandas as pd
-from pathlib import Path  # Recomendado para manipulação de caminhos
+from pathlib import Path 
 
 def carregar_dados_csv():
     csv_path = Path(__file__).parent.parent.parent / 'data' / 'Relatorio_cadop.csv'
-    return pd.read_csv(csv_path, sep=';', encoding='utf-8')  # Volta 2 níveis e entra em data/
+    return pd.read_csv(csv_path, sep=';', encoding='utf-8') 
 
     # Verifica se o arquivo existe
     if not csv_path.exists():

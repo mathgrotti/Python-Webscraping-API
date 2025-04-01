@@ -1,6 +1,5 @@
 <template>
   <div class="busca-operadoras">
-    <!-- Barra de pesquisa -->
     <div class="search-bar">
       <input 
         v-model="termoBusca" 
@@ -57,7 +56,7 @@ export default {
       this.erro = null;
       
       try {
-        // Constrói a URL com o parâmetro de busca se existir
+      
         let url = 'http://localhost:8000/api/operadoras';
         if (this.termoBusca) {
           url += `?termo=${encodeURIComponent(this.termoBusca)}`;
@@ -89,9 +88,9 @@ export default {
       }
     },
     
-    // Este método pode ser simplificado já que a filtragem é feita no backend
+    
     filtrarOperadoras() {
-      // Agora apenas chama a API novamente com o termo de busca
+      // Apenas chama a API novamente com o termo de busca
       this.buscarOperadoras();
     }
   },

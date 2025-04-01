@@ -1,7 +1,0 @@
-pdfplumber
-pandas
-tqdm
-openpyxl
-numpy
-zipfile = "latest"
-csv
