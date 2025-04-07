@@ -19,6 +19,7 @@ Vue.js (frontend)
 Pandas, PyPDF2
 
 Node.js
+<br><br>
 
 
 Primeiramente, dentro de Python-Webscraping-API execute o comando para instalar todas as dependências necessárias:
@@ -143,8 +144,8 @@ Acesse em: http://localhost:5173
     # Acessar API
     # http://localhost:8000
 
-
-🚀 Destaques do projeto
+<br><br>
+###🚀 Destaques do projeto
 
 🕸️ Webscraping inteligente dos anexos de operadoras no site da ANS
 
