@@ -145,7 +145,7 @@ Acesse em: http://localhost:5173
     # http://localhost:8000
 
 <br><br>
-###🚀 Destaques do projeto
+### 🚀 Destaques do projeto
 
 🕸️ Webscraping inteligente dos anexos de operadoras no site da ANS
 
