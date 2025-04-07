@@ -1,6 +1,25 @@
-﻿# Projeto de Análise de Operadoras de Saúde ANS
+﻿# 🩺 Webscraper + API ANS
 
-Este projeto integra webscraping, transformação de dados, armazenamento em banco de dados e uma API REST para disponibilizar informações sobre operadoras de saúde cadastradas na ANS (Agência Nacional de Saúde Suplementar).
+📌 O que é
+Sistema completo que automatiza a coleta, transformação, armazenamento e exibição de dados públicos da ANS (Agência Nacional de Saúde Suplementar). A solução entrega uma API REST robusta e um frontend leve para consultar operadoras de saúde.
+
+💡 Por que criei
+A ANS disponibiliza dados valiosos, mas de forma pouco amigável — espalhados em PDFs e com acesso manual. Resolvi transformar essa realidade com um sistema que automatiza esse processo de ponta a ponta. A ideia nasceu da curiosidade e virou um laboratório prático para testar habilidades em scraping, backend, SQL e Docker, tudo com propósito real.
+
+🛠️ Tecnologias usadas
+
+Python (BeautifulSoup, Selenium, FastAPI)
+
+MySQL
+
+Docker & Docker Compose
+
+Vue.js (frontend)
+
+Pandas, PyPDF2
+
+Node.js
+
 
 Primeiramente, dentro de Python-Webscraping-API execute o comando para instalar todas as dependências necessárias:
 
@@ -124,3 +143,17 @@ Acesse em: http://localhost:5173
     # Acessar API
     # http://localhost:8000
 
+
+🚀 Destaques do projeto
+
+🕸️ Webscraping inteligente dos anexos de operadoras no site da ANS
+
+📄 Conversão de PDFs para CSVs estruturados com limpeza e normalização dos dados
+
+💾 Armazenamento em banco relacional com queries analíticas organizadas
+
+🔗 API REST (FastAPI) para consulta aos dados de forma simples e eficiente
+
+🌐 Frontend com Vue.js para visualização rápida e amigável
+
+🧪 Ambiente completo para testes locais com docker-compose up
