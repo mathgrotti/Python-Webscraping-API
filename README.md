@@ -1,9 +1,9 @@
 ﻿# 🩺 Webscraper + API ANS
 
-📌 O que é
+📌 O que é <br>
 Sistema completo que automatiza a coleta, transformação, armazenamento e exibição de dados públicos da ANS (Agência Nacional de Saúde Suplementar). A solução entrega uma API REST robusta e um frontend leve para consultar operadoras de saúde.
 
-💡 Por que criei
+💡 Por que criei <br>
 A ANS disponibiliza dados valiosos, mas de forma pouco amigável — espalhados em PDFs e com acesso manual. Resolvi transformar essa realidade com um sistema que automatiza esse processo de ponta a ponta. A ideia nasceu da curiosidade e virou um laboratório prático para testar habilidades em scraping, backend, SQL e Docker, tudo com propósito real.
 
 🛠️ Tecnologias usadas
